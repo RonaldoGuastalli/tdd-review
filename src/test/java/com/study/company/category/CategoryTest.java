@@ -71,6 +71,4 @@ class CategoryTest {
                 category.newCategory(expectedName, expectedDescription, expectedIsActive));
         Assertions.assertEquals(expectedCategory.getMessage(), expectedErrorMessage);
     }
-
-
 }
