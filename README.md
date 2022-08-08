@@ -6,26 +6,27 @@ Conceito de testes: pirâmide de testes
 <img alt="The Test Pyramid" height="200" src="images/img_test_pyramid.png" width="300"/>
 
 Unit test:
-- testa parte do código
-- independente de integração\
-- método, classe, função, etc
+- testa parte do código;
+- independente de integração;
+- método, classe, função, etc;
 - rápidos por não dependem de framework;
 
 Integration/Service Test:
 - verificar se duas ou mais unidades que se integram funcionam;
 - integração do sistema ao framework;
 - camada de infraestrutura da aplicação;
-- exemplo:
-- bind da requisição está correta;
-- repositório fazem as queries corretas;
-- chamadas HTTP são feitas corretamente;
+exemplo:
+  - bind da requisição está correta;
+  - repositório fazem as queries corretas;
+  - chamadas HTTP são feitas corretamente;
 
 UI/E2E Tests:
 - simulam o utilizador no ambiente real;
 - no contexto API testes que sobem toda a aplicação e simulam o utilizador a partir de chamadas dos serviços;
 
 ## 2 - TDD & BDD
-- TDD: test-driven development e BDD: behavior-driven development
+- TDD: test-driven development;
+- BDD: behavior-driven development;
 - TDD e BDD são ambas metodologias de desenvolvimento de ‘software’ nas quais os testes desempenham um papel vital.
 - Funcionam de maneira semelhante e geram resultados semelhantes.
 - Eles não são os mesmos, no entanto.
@@ -57,11 +58,11 @@ The addition of the new item should fail
 `
 #### Qual escolher? TDD ou BDD?
 Cada abordagem atende a uma necessidade diferente. 
-- BDD é uma abordagem de alto nível, centrada no utilizador, focada em encorajar a conversa e a colaboração;
-- TDD é uma técnica de desenvolvimento. É de nível inferior e centrado no desenvolvedor
+- BDD é uma abordagem de alto nível, centrada no utilizador, focada em encorajar a `conversa e a colaboração`;
+- TDD é uma técnica de desenvolvimento. É de nível inferior e centrado no desenvolvimento;
 
 ## 2 - Given-When-Then
-- Given-When-Then é um estilo de representação de tests;
+- Given-When-Then é um `estilo de representação` de tests;
 - A ideia essencial é dividir a escrita de um cenário (ou teste) em três seções:
   - `given`: descreve o estado antes de iniciar o comportamento que especifica neste cenário, como as pré-condições para o teste. 
   - `when`: é o comportamento que especifica. 
@@ -74,7 +75,7 @@ Um exemplo aplicado neste projeto é a criação de um dominio de `Categoria` pa
 - Nome (name), 
 - descrição (description), 
 - ativar e desativar (isActive), 
-- auditoria(data de criação, atualização e deleção) - createdAt, updatedAt, deletedAt
+- auditoria(data de criação, atualização e deleção - createdAt, updatedAt, deletedAt)
 - Regra de negócio:
   - Nome não deve nulo ou em branco;
   - Nome deve conter no mínimo 3 caracteres;
@@ -97,7 +98,7 @@ Um exemplo aplicado neste projeto é a criação de um dominio de `Categoria` pa
 
 ![img_2.png](images/img_4_param_created.png)
 
-- Teste passou
+- Teste passou (green)
 
 ![img_1.png](images/img_5_test_passed.png)
 
