@@ -3,7 +3,7 @@
 ## 1 — Pouco Sobre Testes
 Conceito de testes: pirâmide de testes
 
-<img alt="The Test Pyramid" height="200" src="/Users/ronaldoguastalli/Downloads/testPyramid.png" width="300"/>
+<img alt="The Test Pyramid" height="200" src="images/img_test_pyramid.png" width="300"/>
 
 Unit test:
 - testa parte do código
@@ -35,7 +35,7 @@ O conceito simples do TDD é escrever e corrigir os testes que falharam (`red-gr
 Isso ajuda a evitar a `duplicação de código` à medida que escrevemos uma pequena quantidade de código de cada vez para passar nos testes.
 Os testes nada mais são do que condições de requisitos que precisamos testar para cumpri-los.
 
-<img alt="Five Steps of Test-Driven Development" height="500" src="/Users/ronaldoguastalli/Downloads/081216_0811_TestDrivenD2.webp" width="400"/>
+<img alt="Five Steps of Test-Driven Development" height="500" src="images/img_test_driven_development_flow.webp" width="400"/>
 
 #### BDD
 O processo BDD começa com um recurso precisa ser criado, por exemplo, uma nova feature para adicionar um item a uma lista:
@@ -88,15 +88,17 @@ Um exemplo aplicado neste projeto é a criação de um dominio de `Categoria` pa
 ![img_1.png](images/img_1_create_test.png)
 
 - Criar a entidade;
-- 
+
 ![img.png](images/img_2_create_entity.png)
 
 - Criar parâmteros e métodos;
 
 ![img.png](images/img_3_create_param.png)
+
 ![img_2.png](images/img_4_param_created.png)
 
 - Teste passou
+
 ![img_1.png](images/img_5_test_passed.png)
 
 ## 3 — Referências
