@@ -32,7 +32,16 @@ public class Category {
         return category;
     }
 
-    private void validate(final Category category) {
+    public Category deactivate() {
+        if(getDeletedAt() == null) {
+            this.deletedAt = Instant.now();
+        }
+        this.active = false;
+        this.updatedAt = Instant.now();
+        return this;
+    }
+
+    public void validate(final Category category) {
         checkNameConstraints(category);
     }
 
